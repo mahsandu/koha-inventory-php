@@ -4,3 +4,4 @@ homes
 logs  
 mail    
 virtualmin-backup
+.*
