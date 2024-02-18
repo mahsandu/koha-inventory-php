@@ -8,6 +8,7 @@ require_once('scripts/AdminLogin.php');
 <head>
     <title>Login Page</title>
     <link rel="stylesheet" href="public/css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
    

@@ -3,7 +3,7 @@
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Website Name</a>
+    <a class="navbar-brand" href="#">IUB Inventory System</a>
 
       <!-- right nav--->
       <ul class="navbar-nav justify-content-end">

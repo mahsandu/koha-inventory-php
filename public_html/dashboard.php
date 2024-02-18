@@ -43,7 +43,7 @@
      <!-----dashboard---->
      <div class="dashboard-content">
      <?php
-      require_once('../database.php');
+      require_once('database.php');
       
 
       if(isset($_GET['page'])) {
