@@ -58,6 +58,10 @@
           case 'category-form':
             require_once 'views/category/form.php';
           break;
+
+          case 'inventory':
+            require_once 'views/inventory/index.php';
+          break;
           
           /* Content nvigation*/
           case 'content-list':
@@ -125,7 +129,37 @@
 
       } else {
             require_once('views/dashboard/intro.php');
-            require_once('views/dashboard/support.php');
+            // require_once('views/dashboard/support.php');
+            require_once('views/dashboard/koha-data.php');
+            // direct
+            // SQL query
+        $sql = "SELECT COUNT(barcode) as count FROM items";
+
+        // Execute query
+        $result = $koha->query($sql);
+
+        // Check if the query was successful
+        if ($result === false) {
+            die("Error executing the query: " . $koha->error);
+        }
+
+        //fetch the result
+        $row = $result->fetch_assoc();
+
+        if ($row) {
+            //access the result
+            $count = $row['count'];
+            echo "<div class='card'>";
+            echo $count;
+            echo "</div>";
+        }
+        else {
+            echo "nothing here, your are totally wrong.";
+        }
+        // Free the result set
+        $result->free();
+        // 
+
       }
     ?>
      </div>
