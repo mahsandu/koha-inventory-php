@@ -49,6 +49,14 @@
       if(isset($_GET['page'])) {
         $page = $_GET['page'];
         switch($page) {
+          /* inventory Manager */
+          case 'inventory-list':
+            require_once 'views/inventoryList/table.php';
+        break;
+
+        case 'inventory-list-form':
+          require_once 'views/inventoryList/form.php';
+        break;
 
            /* Category Navigation */
           case 'category-list':

@@ -10,13 +10,18 @@
 </li>
 
   <!--- Website content--->
-  <li class="nav-item toggle">
+  <li class="nav-item">
     <a class="nav-link" href="#"><i class="fa fa-laptop"></i>  Website Content</a>
 
     <ul class="nav flex-column toggle-list">
         <li class="nav-item">
             <a href="dashboard.php?page=category-list" class="nav-link">
             <i class="fa fa-list"></i> Category
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="dashboard.php?page=inventory-list" class="nav-link">
+            <i class="fa fa-list"></i> List of Inventory
             </a>
         </li>
         <li class="nav-item">
